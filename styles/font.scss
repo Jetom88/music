@@ -1,0 +1,10 @@
+@import "./global.scss";
+
+@mixin fontWeight($weight) {
+  @if isWeight((100, 200, 300, 400, 500, 600, 700, 800, 900), $weight) {
+    font-family: var(--font-pre);
+    font-weight: $weight;
+  } @else {
+    @error "Only 100, 200, 300, 400, 500, 600, 700, 800, 900";
+  }
+}
