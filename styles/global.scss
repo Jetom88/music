@@ -140,6 +140,10 @@ a:hover {
   text-decoration: underline;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .globalLayout {
   max-width: 600px;
   height: 100vh;
