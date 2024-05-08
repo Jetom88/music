@@ -1,0 +1,10 @@
+$font-colors: (
+  primary: #171c26,
+  blueGray2: #6c7689,
+  blueGray3: #a4aab7,
+  white: #fff,
+);
+
+@function getColor($color-name) {
+  @return map-get($font-colors, $color-name);
+}

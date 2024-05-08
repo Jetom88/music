@@ -1,3 +1,5 @@
+@import "./color.scss";
+
 html,
 body,
 div,
@@ -129,6 +131,7 @@ body {
     "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI",
     "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
+  color: getColor(primary);
 }
 
 a {
@@ -149,5 +152,6 @@ a:hover {
   height: 100vh;
 
   margin: 0 auto;
+
   background: white;
 }
