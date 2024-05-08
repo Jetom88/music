@@ -101,6 +101,7 @@ section {
   display: block;
 }
 body {
+  background: #f8f9fa;
   line-height: 1;
 }
 ol,
@@ -137,4 +138,12 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.globalLayout {
+  max-width: 600px;
+  height: 100vh;
+
+  margin: 0 auto;
+  background: white;
 }
