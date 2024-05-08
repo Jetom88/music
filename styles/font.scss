@@ -1,5 +1,21 @@
 @import "./global.scss";
 
+$font-sizes: (
+  xs: 10px,
+  s: 12px,
+  m: 16px,
+  l: 20px,
+  xl: 24px,
+);
+
+@function fontSize($key) {
+  @if map-has-key($font-sizes, $key) {
+    @return map-get($font-sizes, $key);
+  } @else {
+    @return null;
+  }
+}
+
 @mixin fontWeight($weight) {
   @if isWeight((100, 200, 300, 400, 500, 600, 700, 800, 900), $weight) {
     font-family: var(--font-pre);
