@@ -1,5 +1,7 @@
+import LoginPage from "./(login)/page"
+
 const page = () => {
-  return <div>test</div>
+  return <LoginPage />
 }
 
 export default page

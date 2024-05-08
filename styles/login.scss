@@ -1,0 +1,66 @@
+@import "./import.scss";
+
+.loginWrapper {
+  height: 100%;
+
+  padding: 32px;
+
+  .loginContainer {
+    h2 {
+      margin-bottom: 32px;
+
+      @include fontWeight(700);
+      text-align: left;
+      font-size: 32px;
+    }
+
+    .loginButtonWrapper {
+      @include flexBox(start, center, column);
+      gap: 8px;
+
+      li {
+        width: 100%;
+
+        .loginButton {
+          @include flexBox(start, center);
+
+          @include fontWeight(600);
+          width: 100%;
+
+          color: getColor(blueGray2);
+
+          border: 1px solid getColor(blueGray3);
+          border-radius: 15px;
+          padding: 7px 23px;
+          background: transparent;
+
+          .logo {
+            width: 24px;
+            height: 24px;
+          }
+
+          .googleLogo {
+            background: url(https://accounts.scdn.co/sso/images/new-google-icon.72fd940a229bc94cf9484a3320b3dccb.svg)
+              center center no-repeat;
+          }
+
+          .facebookLogo {
+            background: url(https://accounts.scdn.co/sso/images/new-facebook-icon.eae8e1b6256f7ccf01cf81913254e70b.svg)
+              center center no-repeat;
+          }
+
+          .text {
+            margin: auto;
+          }
+        }
+      }
+
+      .line {
+        border-image: initial;
+        border-top: 1px solid getColor(blueGray3);
+
+        margin: 32px 0;
+      }
+    }
+  }
+}

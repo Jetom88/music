@@ -20,7 +20,9 @@ const pretendard = localFont({
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={pretendard.className}>{children}</body>
+      <body className={pretendard.className}>
+        <main className="globalLayout">{children}</main>
+      </body>
     </html>
   )
 }
