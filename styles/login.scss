@@ -2,21 +2,27 @@
 
 .loginWrapper {
   height: 100%;
-
-  padding: 32px;
+  padding: 50px 32px;
 
   .loginContainer {
-    h2 {
-      margin-bottom: 32px;
+    height: 100%;
+    @include flexBox(even, start, column);
+    .loginTitle {
+      h2 {
+        @include fontWeight(700);
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
 
-      @include fontWeight(700);
-      text-align: left;
-      font-size: 32px;
+      p {
+        @include fontColor(blueGray2);
+      }
     }
 
     .loginButtonWrapper {
-      @include flexBox(start, center, column);
+      @include flexBox(center, center, column);
       gap: 8px;
+      width: 100%;
 
       li {
         width: 100%;
@@ -26,11 +32,10 @@
 
           @include fontWeight(600);
           width: 100%;
-
-          color: getColor(blueGray2);
+          @include fontColor(blueGray2);
 
           border: 1px solid getColor(blueGray3);
-          border-radius: 15px;
+          border-radius: 10px;
           padding: 7px 23px;
           background: transparent;
 
@@ -53,13 +58,6 @@
             margin: auto;
           }
         }
-      }
-
-      .line {
-        border-image: initial;
-        border-top: 1px solid getColor(blueGray3);
-
-        margin: 32px 0;
       }
     }
   }
