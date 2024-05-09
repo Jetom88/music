@@ -16,6 +16,10 @@ $font-sizes: (
   }
 }
 
+@mixin fontSize($font-sizes) {
+  font-size: getFontSize($font-sizes);
+}
+
 @mixin fontWeight($weight) {
   @if isWeight((100, 200, 300, 400, 500, 600, 700, 800, 900), $weight) {
     font-family: var(--font-pre);
