@@ -8,3 +8,7 @@ $font-colors: (
 @function getColor($color-name) {
   @return map-get($font-colors, $color-name);
 }
+
+@mixin fontColor($colors) {
+  color: getColor($colors);
+}
