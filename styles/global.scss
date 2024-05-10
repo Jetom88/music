@@ -1,5 +1,17 @@
 @import "./color.scss";
 
+html {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  // IE와 Edge 브라우저를 위한 설정
+  -ms-overflow-style: none;
+
+  // 파이어폭스를 위한 설정
+  scrollbar-width: none;
+}
+
 html,
 body,
 div,
@@ -149,7 +161,7 @@ a:hover {
 
 .globalLayout {
   max-width: 600px;
-  height: 100vh;
+  min-height: 100vh;
 
   margin: 0 auto;
 

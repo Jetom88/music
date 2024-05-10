@@ -1,19 +1,23 @@
 @import "./import.scss";
 
 .homeWrapper {
-  @include flexBox(center, center, column);
-  gap: 24px;
+  height: 100%;
 
-  padding: 20px 10px;
+  .homeContainer {
+    @include flexBox(center, center, column);
+    gap: 24px;
 
-  .recommend {
-    width: 100%;
+    padding: 20px 10px;
 
-    div {
-      h3 {
-        @include fontSize(l);
-        @include fontWeight(600);
-        margin-bottom: 14px;
+    .recommend {
+      width: 100%;
+
+      div {
+        h3 {
+          @include fontSize(l);
+          @include fontWeight(600);
+          margin-bottom: 14px;
+        }
       }
     }
   }
