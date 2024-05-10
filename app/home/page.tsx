@@ -1,5 +1,6 @@
 import "@/styles/home.scss"
 import Card from "../components/Card"
+import Navigation from "../components/Navigation"
 
 const HomePage = () => {
   return (
@@ -44,6 +45,8 @@ const HomePage = () => {
           </div>
         </div>
       </article>
+
+      <Navigation />
     </section>
   )
 }
