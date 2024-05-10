@@ -2,11 +2,14 @@
 
 .loginWrapper {
   height: 100%;
+
   padding: 50px 32px;
 
   .loginContainer {
+    @include flexBox(even, stretch, column);
+
     height: 100%;
-    @include flexBox(even, start, column);
+
     .loginTitle {
       h2 {
         @include fontWeight(700);
@@ -20,13 +23,10 @@
     }
 
     .loginButtonWrapper {
-      @include flexBox(center, center, column);
+      @include flexBox(center, stretch, column);
       gap: 8px;
-      width: 100%;
 
       li {
-        width: 100%;
-
         .loginButton {
           @include flexBox(start, center);
 
