@@ -1,13 +1,13 @@
 import "@/styles/home.scss"
-import Card from "./components/Card"
+import Card from "../components/Card"
 
 const HomePage = () => {
   return (
-    <section className="homeWapper">
+    <section className="homeWrapper">
       <article className="recommend">
         <div>
           <h3>jetom님을 위한 추천음악</h3>
-          <div className="cardWapper">
+          <div className="cardWrapper">
             <Card />
             <Card />
             <Card />
@@ -16,8 +16,8 @@ const HomePage = () => {
       </article>
       <article className="recommend">
         <div>
-          <h3>아티스트 추천</h3>
-          <div className="cardWapper">
+          <h3>인기 라디오</h3>
+          <div className="cardWrapper">
             <Card />
             <Card />
             <Card />
@@ -26,8 +26,8 @@ const HomePage = () => {
       </article>
       <article className="recommend">
         <div>
-          <h3>아티스트 추천</h3>
-          <div className="cardWapper">
+          <h3>오늘의 최고 히트곡</h3>
+          <div className="cardWrapper">
             <Card />
             <Card />
             <Card />
@@ -36,18 +36,8 @@ const HomePage = () => {
       </article>
       <article className="recommend">
         <div>
-          <h3>아티스트 추천</h3>
-          <div className="cardWapper">
-            <Card />
-            <Card />
-            <Card />
-          </div>
-        </div>
-      </article>
-      <article className="recommend">
-        <div>
-          <h3>아티스트 추천</h3>
-          <div className="cardWapper">
+          <h3>오늘의 추천</h3>
+          <div className="cardWrapper">
             <Card />
             <Card />
             <Card />
