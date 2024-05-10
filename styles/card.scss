@@ -1,0 +1,34 @@
+@import "./import.scss";
+
+.cardWrapper {
+  @include flexBox(start, center);
+  gap: 10px;
+}
+
+.albumWrapper {
+  width: 100%;
+
+  .thumbnail {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+  }
+
+  .albumInfo {
+    @include flexBox(start, start, column);
+    gap: 4px;
+
+    width: 150px;
+
+    @include fontSize(s);
+
+    .albumTitle {
+      @include fontWeight(600);
+    }
+
+    .artistInfo {
+      @include fontColor(blueGray2);
+    }
+  }
+}

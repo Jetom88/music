@@ -1,6 +1,6 @@
 @import "./import.scss";
 
-.homeWapper {
+.homeWrapper {
   @include flexBox(center, center, column);
   gap: 24px;
 
@@ -16,23 +16,5 @@
         margin-bottom: 14px;
       }
     }
-  }
-
-  .cardWapper {
-    @include flexBox(start, center);
-    gap: 10px;
-  }
-}
-
-.albumWrapper {
-  width: 150px;
-  height: 150px;
-  border: 1px solid black;
-
-  .thumbnail {
-    width: 100%;
-  }
-
-  .albumInfo {
   }
 }
